@@ -21,7 +21,6 @@
 
     <title>Frontend Mentor | QR code component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       * {
         box-sizing: border-box;
@@ -37,19 +36,19 @@
         justify-content: center;
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 400;
         font-style: normal;
       }
       .content {
         align-self: center;
         text-align: center;
-        border-radius: 4%;
+        border-radius: 5%;
+        box-shadow: 10px 10px hsl(212, 45%, 89%);
         padding: 1%;
         background-color: hsl(0, 0%, 100%);
       }
       @media screen and (max-width: 1440px) {
         .content {
-          width: 25%;
+          width: 20%;
         }
       }
       @media screen and (max-width: 500px) {
@@ -59,16 +58,18 @@
       }
       .qr-code {
         width: 90%;
-        border-radius: 4%;
+        border-radius: 5%;
       }
       .heading {
         font-weight: 700;
+        font-size: 20px;
         margin-top: 10%;
         margin-bottom: 10%;
         color: hsl(218, 44%, 22%);
       }
       .text {
         font-weight: 400;
+        font-size: 15px;
         color: hsl(216, 15%, 48%);
       }
       .attribution {
@@ -82,24 +83,24 @@
     </style>
   </head>
   <body>
-    <div class="content">
+    <main class="content">
       <img
         class="qr-code"
         src="./images//image-qr-code.png"
         alt="image-qr-code"
       />
       <div>
-        <p class="heading">
+        <h1 class="heading">
           Improve your front-end skills by building projects
-        </p>
+        </h1>
         <p class="text">
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
       </div>
-    </div>
+    </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
@@ -109,6 +110,6 @@
         target="_blank"
         >Shakiba Alipour</a
       >.
-    </div>
+    </footer>
   </body>
 </html>
