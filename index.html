@@ -12,10 +12,57 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      body {
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .content {
+        align-self: center;
+        text-align: center;
+        border-radius: 4%;
+        padding: 1%;
+        background-color: hsl(0, 0%, 100%);
+      }
+      @media screen and (max-width: 1440px) {
+        .content {
+          width: 25%;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .content {
+          width: 90%;
+        }
+      }
+      .qr-code {
+        width: 90%;
+        border-radius: 4%;
+      }
+      .heading {
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+      }
+      .text {
+        font-weight: 400;
+        color: hsl(216, 15%, 48%);
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -26,15 +73,17 @@
     </style>
   </head>
   <body>
-    <div>
+    <div class="content">
       <img
         class="qr-code"
         src="./images//image-qr-code.png"
         alt="image-qr-code"
       />
-      <div class="text">
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>
+      <div>
+        <p class="heading">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="text">
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
