@@ -4,5 +4,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![](./preview.jpg)
 
-##Live Version
+## Live Version
+
 You can check the live version [here](https://shakiba.dev/QR-Code-Component)
